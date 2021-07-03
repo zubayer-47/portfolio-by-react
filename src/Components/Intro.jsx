@@ -10,7 +10,7 @@ export default function Intro() {
           backgroundImage: `linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(${bgImg})`,
         }}
       >
-        <p className="font-dancingScript text-5xl font-bold ">
+        <p className="font-dancingScript md:text-5xl text-3xl font-bold ">
           Hi! I Am Zubayer. <br />I Love Programming.
         </p>
       </div>
