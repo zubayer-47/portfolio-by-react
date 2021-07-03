@@ -77,7 +77,7 @@ export default function Header() {
           </a>
           .
         </p>
-        <p className="text-gray-400 mb">Good News Coming Soon!!</p>
+        <p className="text-gray-400 mb">Good News Coming Soon!</p>
       </nav>
     </header>
   );
