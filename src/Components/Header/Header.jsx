@@ -1,9 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function Header() {
+export default function Header({className}) {
   return (
-    <header className="max-w-full col-span-4 xl:col-span-3 h-screen bg-gray-900 text-white text-center py-5">
+    <header className={className}>
       <nav>
         <img
           className="mx-auto w-48 rounded-full"
@@ -18,7 +18,7 @@ export default function Header() {
 
         <ul className="leading-8 my-5">
           <li>
-            <NavLink className="hover:text-gray-300" to="/introduction">
+            <NavLink className="hover:text-gray-300" to="/">
               INTRODUCTION
             </NavLink>
           </li>
@@ -38,7 +38,7 @@ export default function Header() {
               to={{ pathname: "https://facebook.com/zubayerDev" }}
               target="_blank"
             >
-              <i class="fab fa-facebook"></i>
+              <i className="fab fa-facebook"></i>
             </NavLink>
           </li>
           <li>
@@ -49,7 +49,7 @@ export default function Header() {
               }}
               target="_blank"
             >
-              <i class="fab fa-twitter"></i>
+              <i className="fab fa-twitter"></i>
             </NavLink>
           </li>
           <li>
@@ -60,7 +60,7 @@ export default function Header() {
               }}
               target="_blank"
             >
-              <i class="fab fa-github"></i>
+              <i className="fab fa-github"></i>
             </NavLink>
           </li>
         </ul>

@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     fontFamily: {
       playFair: ["Playfair Display", "serif"],
+      dancingScript: ["Dancing Script", "cursive"],
+      josefinSlab: ["Josefin Slab", 'serif'],
     },
+    extends: {},
   },
   variants: {
     extend: {},
