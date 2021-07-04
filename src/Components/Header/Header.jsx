@@ -1,34 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function Header({ className }) {
-  const [click, setClick] = useState(true);
-
-  const handleClick = () => {
-    setClick((state) => (state ? false : true));
-  };
-  useEffect(() => {
-    
-  }, [click]);
+export default function Header({
+  className,
+  handleClick,
+  navbarOpen,
+  setNavbarOpen,
+}) {
   return (
     <>
-      <div className="block md:hidden cursor-pointer" onClick={handleClick}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fillRule="evenodd"
-            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z"
-            clipRule="evenodd"
-          />
-        </svg>
-      </div>
       <header
-        className={`${className} overflow-auto md:block hidden`}
-        id="hidden"
+        className={`max-w-full ${
+          navbarOpen ? "col-span-4" : "col-span-6"
+        } md:col-span-4 xl:col-span-3 2xl:col-span-2 h-auto bg-gray-900 text-white text-center py-5 md:block overflow-auto ${
+          !navbarOpen ? "grid" : "hidden"
+        }`}
       >
         <nav>
           <img
@@ -44,22 +30,35 @@ export default function Header({ className }) {
 
           <ul className="leading-8 my-5">
             <li>
-              <NavLink className="hover:text-gray-300" to="/">
+              <NavLink
+                onClick={() => setNavbarOpen(!navbarOpen)}
+                className="hover:text-gray-300"
+                to="/"
+              >
                 INTRODUCTION
               </NavLink>
             </li>
             <li>
-              <NavLink className="hover:text-gray-300" to="/about">
+              <NavLink
+                onClick={() => setNavbarOpen(!navbarOpen)}
+                className="hover:text-gray-300"
+                to="/about"
+              >
                 ABOUT
               </NavLink>
             </li>
             <li>
-              <NavLink className="hover:text-gray-300" to="/timeline">
+              <NavLink
+                onClick={() => setNavbarOpen(!navbarOpen)}
+                className="hover:text-gray-300"
+                to="/timeline"
+              >
                 TIMELINE
               </NavLink>
             </li>
             <li>
               <NavLink
+                onClick={() => setNavbarOpen(!navbarOpen)}
                 className="hover:text-gray-300 text-xl"
                 to={{ pathname: "https://facebook.com/zubayerDev" }}
                 target="_blank"
@@ -69,6 +68,7 @@ export default function Header({ className }) {
             </li>
             <li>
               <NavLink
+                onClick={() => setNavbarOpen(!navbarOpen)}
                 className="hover:text-gray-300 text-xl"
                 to={{
                   pathname: "https://twitter.com/zubayerDev",
@@ -80,6 +80,7 @@ export default function Header({ className }) {
             </li>
             <li>
               <NavLink
+                onClick={() => setNavbarOpen(!navbarOpen)}
                 className="hover:text-gray-300 text-xl"
                 to={{
                   pathname: "https://github.com/zubayer-47",
