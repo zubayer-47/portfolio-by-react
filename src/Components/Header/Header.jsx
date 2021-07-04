@@ -11,7 +11,7 @@ export default function Header({
     <>
       <header
         className={`max-w-full ${
-          navbarOpen ? "col-span-4" : "col-span-6"
+          navbarOpen ? "col-span-4" : "col-span-12 h-screen"
         } md:col-span-4 xl:col-span-3 2xl:col-span-2 h-auto bg-gray-900 text-white text-center py-5 md:block overflow-auto ${
           !navbarOpen ? "grid" : "hidden"
         }`}

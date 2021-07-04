@@ -21,9 +21,7 @@ export default function Home() {
         />
 
         <div
-          className={`h-auto md:col-span-8 xl:col-span-9 2xl:col-span-10 ${
-            navbarOpen ? "col-span-full" : "col-span-6"
-          } overflow-auto`}
+          className={`h-auto md:col-span-8 xl:col-span-9 2xl:col-span-10 col-span-full overflow-auto`}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
