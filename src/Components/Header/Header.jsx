@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Header({className}) {
   return (
-    <header className={className}>
+    <header className={`${className} overflow-auto`}>
       <nav>
         <img
           className="mx-auto w-48 rounded-full"
