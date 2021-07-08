@@ -1,5 +1,5 @@
 import React from "react";
-import bgImg from "./img/zubayer.jpg";
+import bgImg from "./img/hero.JPG";
 
 export default function Intro() {
   return (

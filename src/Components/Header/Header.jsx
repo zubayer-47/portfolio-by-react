@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import HeroBg from '../img/zubayer.jpg'
 
 export default function Header({
   className,
@@ -18,8 +19,8 @@ export default function Header({
       >
         <nav>
           <img
-            className="mx-auto w-48 rounded-full"
-            src="https://avatars.githubusercontent.com/u/77219792?s=400&u=18041097fc22220cbe554d91f52e06b2b7b570ae&v=4"
+            className="mx-auto w-40 h-40 rounded-full object-cover"
+            src={HeroBg}
             alt="profile"
             title="Zubayer's Profile"
           />
