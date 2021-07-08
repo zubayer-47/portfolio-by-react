@@ -4,7 +4,7 @@ import Heading from "./Heading";
 
 export default function About() {
   return (
-    <div className="py-5 px-7 h-screen">
+    <section className="py-7 px-7 overflow-auto h-screen">
       <Heading title="about us" subtitle="who am i?" />
 
       <div className="text-gray-600 mb-14">
@@ -22,7 +22,7 @@ export default function About() {
       </div>
 
       <Heading title="what i do?" subtitle="here are some of my expertise" />
-      <div className="grid grid-cols-1 gap-4 lg:grid-cols-12 my-10">
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-12 mt-10">
         <Card
           title="Web development"
           desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
@@ -39,6 +39,6 @@ export default function About() {
           minima!"
         />
       </div>
-    </div>
+    </section>
   );
 }
