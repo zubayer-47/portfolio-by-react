@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import HeroImg from './img/assets-1.png'
 
 export default function customising() {
    return (
@@ -12,7 +11,7 @@ export default function customising() {
             <h3 className='text-lg md:text-2xl'>I will launch it as soon as possible.</h3>
             <Link to="/" className='text-2xl w-36 py-1 capitalize mb-5 rounded hover:bg-indigo-400 hover:text-gray-900 ring-2 ring-indigo-500 focus:ring-indigo-500 hover:ring-indigo-400 transition-all'>Back to home</Link>
          </div>
-         <img className='w-screen h-screen object-cover' src={HeroImg} alt='Hero' />
+         <img className='w-screen h-screen object-cover' src='https://ik.imagekit.io/r9uwfjdnxbi2/assets-1_wT5NWTNmg.png' alt='Hero' />
       </div>
    )
 }

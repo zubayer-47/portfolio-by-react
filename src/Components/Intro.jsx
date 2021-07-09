@@ -1,5 +1,5 @@
 import React from "react";
-import bgImg from "./img/hero.JPG";
+// import bgImg from "./img/hero.JPG";
 
 export default function Intro() {
   return (
@@ -7,7 +7,7 @@ export default function Intro() {
       <div
         className="bg-cover bg-top bg-no-repeat h-screen flex flex-col justify-center px-10 text-gray-300"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(${bgImg})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url('https://ik.imagekit.io/r9uwfjdnxbi2/hero_jr3E6SRQcxgb.JPG')`,
         }}
       >
         <p className="font-dancingScript md:text-5xl text-3xl font-bold ">
