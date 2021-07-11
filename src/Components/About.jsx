@@ -2,10 +2,12 @@ import React from "react";
 import Card from "./Card";
 import Heading from "./Heading";
 
+export const Context = React.createContext();
+
 export default function About() {
   return (
     <section className="py-7 px-7 overflow-scroll h-screen">
-      <Heading title="about us" subtitle="who am i?" />
+      <Heading title='about us' subtitle='who am i?' />
 
       <div className="text-gray-600 mb-14">
         <p className="my-10">
@@ -21,7 +23,7 @@ export default function About() {
         </p>
       </div>
 
-      <Heading title="what i do?" subtitle="here are some of my expertise" />
+      <Heading title='what i do?' subtitle='here are some of my expertise' />
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-12 mt-10">
         <Card
           title="Web development"
@@ -43,5 +45,6 @@ export default function About() {
         />
       </div>
     </section>
+
   );
 }
