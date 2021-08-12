@@ -1,6 +1,6 @@
 # Here is the Link of Web:
 
-[]<a href="https://zubayer-dev.netlify.app/" target="_blank">Zubayer Dev Portfolio</a>
+[Zubayer Dev Portfolio](https://zubayer-dev.netlify.app/)
 
 # Getting Started with Create React App
 
