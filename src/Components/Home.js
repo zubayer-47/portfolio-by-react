@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import { BrowserRouter } from "react-router-dom";
-import Loader from "./Loader";
-import MobileManu from "./MobileManu";
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Loader from './Loader';
+import MobileManu from './MobileManu';
 
-export default function Home() {
+function Home() {
   const [navbarOpen, setNavbarOpen] = useState(true);
   const [loader, setLoader] = useState(false);
 
@@ -15,15 +15,21 @@ export default function Home() {
     setLoader(true);
     setTimeout(() => {
       setLoader(false);
-    }, 2000);
+    }, 2500);
   }, []);
+
   return (
     <BrowserRouter>
       {loader ? (
         <Loader />
       ) : (
-        <MobileManu navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} handleClick={handleClick} />
+        <MobileManu
+          navbarOpen={navbarOpen}
+          handleClick={handleClick}
+        />
       )}
     </BrowserRouter>
   );
 }
+
+export default Home;

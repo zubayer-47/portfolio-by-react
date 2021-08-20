@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function customising() {
+export default function Customising() {
    return (
       <div className='w-full relative'>
          <div className='w-full h-full bg-black absolute opacity-70'></div>

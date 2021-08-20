@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Loader() {
+   console.log('I am Loader Component')
    return (
       <div className="bg-gray-900 h-screen w-full select-none flex justify-center items-center text-white ">
          <div className="my-4 w-4/6 mx-auto bg-gray-800 h-8 rounded-full flex justify-between px-5 items-center animate-pulse">

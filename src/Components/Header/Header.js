@@ -1,23 +1,20 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import Classes from '../ClassNames/ClassNames';
 
 export default function Header({
-  className,
   handleClick,
   navbarOpen,
-  setNavbarOpen,
 }) {
+  const extendedClasses = Classes(navbarOpen);
+  
   return (
     <>
-      <header
-        className={`max-w-full ${navbarOpen ? "col-span-4" : "col-span-12 h-screen"
-          } md:col-span-4 xl:col-span-3 2xl:col-span-2 h-auto bg-gray-900 text-white text-center py-5 md:block overflow-auto ${!navbarOpen ? "grid" : "hidden"
-          }`}
-      >
+      <header className={extendedClasses.headerClass}>
         <nav>
           <img
             className="mx-auto w-40 h-40 rounded-full object-cover"
-            src='https://ik.imagekit.io/r9uwfjdnxbi2/zubayer_fhohUyiL7iPC.jpg'
+            src="https://ik.imagekit.io/r9uwfjdnxbi2/zubayer_fhohUyiL7iPC.jpg"
             alt="profile"
             title="Zubayer's Profile"
           />
@@ -29,7 +26,7 @@ export default function Header({
           <ul className="leading-8 my-5">
             <li>
               <NavLink
-                onClick={() => setNavbarOpen(!navbarOpen)}
+                onClick={handleClick}
                 className="hover:text-gray-300"
                 to="/"
               >
@@ -38,7 +35,7 @@ export default function Header({
             </li>
             <li>
               <NavLink
-                onClick={() => setNavbarOpen(!navbarOpen)}
+                onClick={handleClick}
                 className="hover:text-gray-300"
                 to="/about"
               >
@@ -47,7 +44,7 @@ export default function Header({
             </li>
             <li>
               <NavLink
-                onClick={() => setNavbarOpen(!navbarOpen)}
+                onClick={handleClick}
                 className="hover:text-gray-300"
                 to="/timeline"
               >
@@ -56,9 +53,9 @@ export default function Header({
             </li>
             <li>
               <NavLink
-                onClick={() => setNavbarOpen(!navbarOpen)}
+                onClick={handleClick}
                 className="hover:text-gray-300 text-xl"
-                to={{ pathname: "https://facebook.com/zubayerDev" }}
+                to={{ pathname: 'https://facebook.com/zubayerDev' }}
                 target="_blank"
               >
                 <i className="fab fa-facebook"></i>
@@ -66,10 +63,10 @@ export default function Header({
             </li>
             <li>
               <NavLink
-                onClick={() => setNavbarOpen(!navbarOpen)}
+                onClick={handleClick}
                 className="hover:text-gray-300 text-xl"
                 to={{
-                  pathname: "https://twitter.com/zubayerDev",
+                  pathname: 'https://twitter.com/zubayerDev',
                 }}
                 target="_blank"
               >
@@ -78,10 +75,10 @@ export default function Header({
             </li>
             <li>
               <NavLink
-                onClick={() => setNavbarOpen(!navbarOpen)}
+                onClick={handleClick}
                 className="hover:text-gray-300 text-xl"
                 to={{
-                  pathname: "https://github.com/zubayer-47",
+                  pathname: 'https://github.com/zubayer-47',
                 }}
                 target="_blank"
               >

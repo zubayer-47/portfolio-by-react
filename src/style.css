@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .routeContainer {
+    @apply h-auto md:col-span-8 xl:col-span-9 2xl:col-span-10 col-span-full overflow-auto;
+  }
+  .svg {
+    @apply h-8 w-10 m-2 block col-start-1 md:hidden bg-transparent rounded-sm focus:ring-8 select-none cursor-pointer;
+  }
+
+  .card {
+    @apply p-5 text-center rounded-md shadow-lg hover:shadow-md border-gray-900 border-t-2 lg:col-span-4;
+  }
+}

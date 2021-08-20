@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Heading({ title, subtitle }) {
-  // const cont = useContext(Context)
   return (
     <div className="uppercase" >
       <h1 className="text-md text-gray-500 tracking-widest font-josefinSlab">
