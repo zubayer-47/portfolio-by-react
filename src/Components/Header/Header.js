@@ -21,7 +21,7 @@ export default function Header({
           <h1 className="text-3xl my-4 font-playFair font-medium text-gray-200">
             A B M Zubayer
           </h1>
-          <p className="text-gray-400">zubayerabm47@gmail.com</p>
+          <p className="text-gray-400">zubayerjs.dev@gmail.com</p>
 
           <ul className="leading-8 my-5">
             <li>
