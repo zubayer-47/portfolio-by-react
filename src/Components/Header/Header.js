@@ -28,6 +28,7 @@ export default function Header({
               <NavLink
                 onClick={handleClick}
                 className="hover:text-gray-300"
+                style={isActive => ({ color: isActive && 'red' }
                 to="/"
               >
                 INTRODUCTION
@@ -37,6 +38,7 @@ export default function Header({
               <NavLink
                 onClick={handleClick}
                 className="hover:text-gray-300"
+style={isActive => ({ color: isActive && 'red' }
                 to="/about"
               >
                 ABOUT
@@ -46,6 +48,7 @@ export default function Header({
               <NavLink
                 onClick={handleClick}
                 className="hover:text-gray-300"
+style={isActive => ({ color: isActive && 'red' }
                 to="/timeline"
               >
                 TIMELINE
