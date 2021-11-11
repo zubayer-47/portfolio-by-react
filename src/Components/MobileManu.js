@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import About from './About';
 import Header from './Header/Header';
 import Intro from './Intro';
@@ -27,9 +27,18 @@ function MobileManu({ navbarOpen, handleClick }) {
             clipRule="evenodd"
           />
         </svg>
-        <Route exact component={Intro} path="/" />
-        <Route component={About} path="/about" />
-        <Route component={Timeline} path="/timeline" />
+
+        <Switch>
+          <Route exact path="/">
+            <Intro />
+          </Route>
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/timeline">
+            <Timeline />
+          </Route>
+        </Switch>
       </div>
     </div>
   );

@@ -27,9 +27,12 @@ export default function Header({
             <li>
               <NavLink
                 onClick={handleClick}
-//                 className="hover:text-gray-300"
-                style={isActive => ({ color: isActive ? 'red' : 'blue' })}
+                className="hover:text-gray-300"
+                activeStyle={{
+                  color: '#ccc'
+                }}
                 to="/"
+                exact
               >
                 INTRODUCTION
               </NavLink>
@@ -37,8 +40,10 @@ export default function Header({
             <li>
               <NavLink
                 onClick={handleClick}
-//                 className="hover:text-gray-300"
-style={isActive => ({ color: isActive ? 'red' : 'blue' })}
+                className="hover:text-gray-300"
+                activeStyle={{
+                  color: '#ccc'
+                }}
                 to="/about"
               >
                 ABOUT
@@ -47,8 +52,10 @@ style={isActive => ({ color: isActive ? 'red' : 'blue' })}
             <li>
               <NavLink
                 onClick={handleClick}
-//                 className="hover:text-gray-300"
-style={isActive => ({ color: isActive ? 'red' : 'blue' })}
+                className="hover:text-gray-300"
+                activeStyle={{
+                  color: '#ccc'
+                }}
                 to="/timeline"
               >
                 TIMELINE
